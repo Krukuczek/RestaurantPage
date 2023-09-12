@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Righteous&display=swap');
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    background-color: #232424;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Righteous', cursive;
+}
+#content{
+    color:rgb(54, 54, 54);
+    background-color: #F4EBD9;
+    width: clamp(320px, 35rem,750px);
+    height: 85vh;
+    border-radius: 3vw;
+    border: 10px solid #7c6354;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contentMirror{
+    display: none;
+    position: absolute;
+    color:rgb(54, 54, 54);
+    background-color: #F4EBD9;
+    width: clamp(320px, 35rem,750px);
+    height: 85vh;
+    border-radius: 3vw;
+}
+#navbar{
+    position: relative;
+    margin-top: -10px;
+    margin-right: -10px;
+    align-self: flex-end;
+}
+.navBtn{
+    background-color: #3c3029;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    border-left: solid 2px black;
+    border-bottom: solid 2px black;
+}
+@keyframes example {
+    0%   {padding: 15px;}
+    100% {padding: 25px 15px 15px 15px;}
+  }
+.navBtn:hover{
+    background-color: #daaf31;
+    padding: 25px 15px 15px 15px;
+    margin-top: -10px;
+    animation-name: example;
+    animation-duration: 0.3s;
+}
+.active{
+    background-color: #daaf31;
+    padding: 25px 15px 15px 15px;
+    margin-top: -10px;
+}
+#btnContact{
+    border-radius:0px 10px 0px 0px;
+}
+#btnHome{
+    border-radius: 0px 0px 0px 5px;
+}
+#container, #menuContainer, #contactContainer{
+    height: 90%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+#menuContainer,#contactContainer{
+    justify-content: flex-start;
+}
+#container > div,h1,ul{
+    border-bottom: solid 1px black;
+    padding-bottom: 10px;
+}
+ul{
+    list-style: none;
+    padding-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+h1{
+    font-size: 2.5em;
+    color:black;
+    text-shadow: 0px 0px 5px #daaf31;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.dishes span{
+    position: relative;
+    font-size: 5px;
+    left: 0px;
+    bottom: 10px;
+}
+.dishes>ul{
+    display: grid;
+    grid-template-columns: 2fr 6fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+.dishes h2,p{
+    margin: 0px;
+}
+.github{
+    cursor: pointer;
+    color:#7c6354;
+    text-decoration: none;
+}
+.github:hover{
+    color: #daaf31;
+}
